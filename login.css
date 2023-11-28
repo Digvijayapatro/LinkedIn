@@ -1,0 +1,314 @@
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+h1{
+  text-align: center;
+  font-weight:bolder;
+
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  background: #4c68af;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #030698fb;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #3b52e4;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+  background: #52b8b3; /* fallback for old browsers */
+  /* background: rgb(111, 193, 194);
+  background: linear-gradient(90deg, rgb(65, 100, 189) 0%, rgb(24, 99, 179)50%);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;       */
+/* } */ 
+
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  --blue: #0077b5;
+}
+
+body{
+  font-family:sans-serif;
+  overflow: scroll;
+}
+
+header h1{
+  font-weight: bolder;
+  font-size: 20px;
+  color: var(--blue);
+}
+
+header h1 span{
+  color: white;
+  background-color: var(--blue);
+  border-radius: 5px;
+}
+
+section{
+  max-width: 250px;
+  width: 40vw;
+  min-width: 200px;
+  padding: 20px 15px;
+  margin: 50px auto 25px;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+section>h2{
+  margin: 0 0 4px 0;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+section>p{
+  font-size: 0.55rem;
+  margin-top: 0;
+  font-weight: 450;
+}
+
+section input{
+  padding: 8px;
+  font-size: 0.7em;
+  width: 100%;
+  margin-bottom: 10px; 
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+
+section input:focus{
+  outline: none;
+  font-size: 0.9em;
+}
+
+.password{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.password input{
+  border: none;
+  padding: 9px;
+  margin: 0;
+}
+
+.password input:focus{
+  outline: none;
+}
+
+.password a{
+  text-decoration: none;
+  font-size: 9px;
+  padding:10px;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+section a#pwd-change{
+  display: block;
+  color: var(--blue);
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+  margin: 9px 0 14px;
+}
+
+section a#pwd-change:hover{
+  font-size: 12px;
+}
+
+
+button[type="submit"]{
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  color: rgb(255, 255 , 255);
+  background-color: var(--blue);
+  font-size: 0.7em;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.4);
+  transition: 0.3s ease;
+}
+
+button[type="submit"]:hover{
+  cursor: pointer;
+  font-size: 0.9em;
+  box-shadow: none;
+}
+
+div.flex{
+  display: flex;
+  align-items: center;
+}
+
+div.flex p{
+  padding: 5px;
+  font-size: 10px;
+}
+
+div.hor-line{
+  height: 1px ;
+  width: 44%;
+  background-color: rgba(50, 50, 50, 0.3);
+}
+
+a#apple-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: aliceblue;
+  font-size: 0.65em;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+a#apple-icon:hover{
+  font-size: 0.8em;
+  box-shadow: none;
+  padding: auto;
+}
+
+a#apple-icon i{
+  padding: 10px 5px;
+}
+
+main>p{
+  text-align: center;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+main>p a{
+  text-decoration: none;
+  color: #0077b5;
+  transition: 0.3s ease;
+}
+
+main>p a:hover{
+  font-size: 12px;
+}
+
+body nav{
+  width: 600px;
+  display: flex;
+  font-size: 9px;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 100px auto 20px;
+}
+
+body nav a{
+  text-decoration: none;
+  color:rgba(0, 0, 0, 0.6);
+}
+
+footer nav a.first span:first-of-type{
+  font-weight:800;
+  margin-left: 260px;
+
+}
+
+footer nav a.first span:last-of-type{
+  font-weight: 800;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0 1px;
+  border-radius: 2px;
+  
+}
+footer nav a:last-of-type span{
+  transform: rotate(180deg);
+}
